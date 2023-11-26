@@ -1,0 +1,23 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    color: #fff;
+}
+header>div {
+    height: 80px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gnb {
+    display: flex;
+}
+.gnb>li {
+    margin-left: calc(100vw * (80 / 1400));
+    font-size: 15px;
+}

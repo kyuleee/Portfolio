@@ -1,0 +1,52 @@
+.main {
+    background-color: #000016;
+    padding: 0 40px;
+    color: #fff;
+    /* height: 2000px; */
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    height: 100vh;
+    text-align: center;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll {
+    overflow: hidden;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+.scrolling{
+    color: #fff;
+    position: fixed;
+    font-size: 13px;
+    color: #27C4D5;
+    font-family: stolzl,pretendard,-apple-system,sans-serif;
+    left: 40px;
+    bottom: 40px;
+    z-index: 10;
+    letter-spacing: .1em;
+    -webkit-animation: scroll 2s infinite;
+    animation: scroll 2s infinite;
+    
+}
+.scrolling>p{
+    transform: rotate(90deg) translate(-25%, 150%);
+    transform-origin: center top;
+}
+@keyframes scroll {
+    0%{
+        transform: translateY(-50%);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-50%);
+    }
+}

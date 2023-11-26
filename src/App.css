@@ -1,0 +1,54 @@
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+ul,ol{
+  list-style: none;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+.scroll {
+  overflow: hidden;
+}
+/* .App {
+  background-color: #000016;
+  padding: 0 40px;
+  color: #fff;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  height: 100vh;
+  text-align: center;
+} */
+.App::-webkit-scrollbar {
+  display: none; 
+}
+.threeModel{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* height: 160vh; */
+  overflow: hidden;
+  z-index: 1;
+}
+canvas{
+  position: relative;
+  width: 100%;
+  height: 100vh ;
+  /* z-index: -90; */
+}
+/* .test{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 999;
+} */
+
