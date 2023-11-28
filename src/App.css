@@ -30,19 +30,19 @@ ul,ol{
 }
 .threeModel{
   position: absolute;
+  background: #000016;
   top:0;
   left: 0;
   width: 100%;
   height: 100vh;
-  /* height: 160vh; */
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 1;
 }
 canvas{
   position: relative;
   width: 100%;
   height: 100vh ;
-  /* z-index: -90; */
+  z-index: -90;
 }
 /* .test{
   position: absolute;

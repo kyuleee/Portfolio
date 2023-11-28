@@ -3,7 +3,7 @@ import './contact.css';
 const Contact = ()=>{
     return(
         <section className='contact'>
-            연락바람
+            <h2>CONTACT</h2>
         </section>
         
     );

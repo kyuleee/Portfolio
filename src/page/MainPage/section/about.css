@@ -3,4 +3,121 @@
     width: 100%;
     height: 100vh;
     scroll-snap-align: center;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+.contWrap{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+.profile{
+    margin-right: 100px;
+    width: 30%;
+    text-align: center;
+}
+/* .profile>img{
+} */
+.profile>h3{
+    color: #27c4d5;
+    font-size: 44px;
+}
+.profileTxt{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.profileTxt h3{
+    font-size: 24px;
+    color: #27c4d5;
+}
+.profileTxt>div>div{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+    height: 30vh;
+}
+.profileTxt ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+}
+.profileTxt ul>li{
+    display: flex;
+    gap: 50px;
+}
+.profileTxt ul>li>p:first-child{
+    width: 80px;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 20px;
+}
+.profileTxt ul>li>p:last-child{
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    opacity: .7;
+    transform: translateY(-1px);
+    width: 80%;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.skillLogo>div{
+    display: flex;
+    margin-bottom: 25px;
+}
+.skillLogo>div>div{
+    width: 55px; height: 55px;
+    /* border-radius: 50%; */
+    border-radius:10% ;
+    margin-right: 35px;
+}
+
+.fstline>div:first-child{
+    background: url('../../../img/html.png') no-repeat top center;
+    background-size: contain;
+}
+.fstline>div:nth-child(2){
+    background: url('../../../img/css.png') no-repeat top center;
+    background-size: contain;
+}
+.fstline>div:nth-child(3){
+    background: url('../../../img/js.png') no-repeat top center;
+    background-size: contain;
+}
+.fstline>div:last-child{
+    background: url('../../../img/react.png') no-repeat top center;
+    background-size: contain;
+}
+
+.secline>div:first-child{
+    background: url('../../../img/figma.png') no-repeat top center;
+    background-size: contain;
+}
+.secline>div:nth-child(2){
+    background: url('../../../img/blender.png') no-repeat top center;
+    background-size: contain;
+}
+.secline>div:nth-child(3){
+    background: url('../../../img/ps.png') no-repeat top center;
+    background-size: contain;
+}
+.secline>div:last-child{
+    background: url('../../../img/ai.png') no-repeat top center;
+    background-size: contain;
+}
+
+.trdline>div:first-child{
+    background: url('../../../img/three.png') no-repeat top center;
+    background-size: contain;
+    background-color: #fff;
+}
+.trdline>div:nth-child(2){
+    background: url('../../../img/node.png') no-repeat top center;
+    background-size: contain;
+}
+.trdline>div:last-child{
+    background: url('../../../img/vscode.png') no-repeat top center;
+    background-size: contain;
 }

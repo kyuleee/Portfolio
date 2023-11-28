@@ -1,13 +1,13 @@
 .main {
     background-color: #000016;
-    padding: 0 40px;
+    /* padding: 0 40px; */
     color: #fff;
     /* height: 2000px; */
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     overflow-y: auto;
     height: 100vh;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .scroll::-webkit-scrollbar {
