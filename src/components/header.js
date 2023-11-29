@@ -3,6 +3,7 @@ import './header.css';
 import logo from '../img/portLogo.png';
 
 const Header = () => {
+    
     return (
         <header>
             <div>
