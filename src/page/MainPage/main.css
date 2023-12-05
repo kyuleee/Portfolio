@@ -3,10 +3,10 @@
     /* padding: 0 40px; */
     color: #fff;
     /* height: 2000px; */
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     overflow-y: auto;
-    height: 100vh;
+    height: 100vh; */
     /* text-align: center; */
 }
 

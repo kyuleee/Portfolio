@@ -4,7 +4,7 @@
 }
 a{
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 ul,ol{
   list-style: none;
@@ -35,7 +35,7 @@ ul,ol{
   left: 0;
   width: 100%;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   z-index: 1;
 }
 canvas{

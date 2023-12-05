@@ -1,71 +1,77 @@
 import './work.css';
-// import img1 from '../../../img/sample1.png'
-import img1 from '../../../img/kolon.jpg';
-import img2 from '../../../img/dokdo.jpg';
-// import img3 from '../../../img/domino.jpg';
+// import img1 from '../../../img/kolon.jpg';
+// import img2 from '../../../img/dokdo.jpg';
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { portText } from '../../../data';
 
-const Work = ()=>{
-    return(
-        <section className="work">
-            <h2>WORK</h2>
-            <ul className='workList'>
-                <li>
-                    <div className='usecase'>
-                        <div className='front'>
-                            <img src={img1}/>
-                            <p>KOLON</p>
-                        </div>
-                        <div className='back'>
-                            <h3>KOLON</h3>
-                            <p>grid 스타일을 이용한 레이아웃</p>
-                            <ul className='workDetail'>
-                                <li>
-                                    <strong>사용기술</strong>
-                                    <p>HTML, CSS</p>
-                                </li>
-                                <li>
-                                    <strong>사이트주소</strong>
-                                    <p>https://www.kolon.com/kr/main</p>
-                                </li>
-                                <li>
-                                    <strong>github</strong>
-                                    <p>https://github.com/kyuleee</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div className='usecase'>
-                        <div className='front'>
-                            <img src={img2}/>
-                            <p>독도전시관</p>
-                        </div>
-                        <div className='back'>
-                            <h3>KOLON</h3>
-                            <p>grid 스타일을 이용한 레이아웃</p>
-                            <ul className='workDetail'>
-                                <li>
-                                    <strong>사용기술</strong>
-                                    <p>HTML, CSS</p>
-                                </li>
-                                <li>
-                                    <strong>사이트주소</strong>
-                                    <p>https://www.kolon.com/kr/main</p>
-                                </li>
-                                <li>
-                                    <strong>github</strong>
-                                    <p>https://github.com/kyuleee</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                
-                <li>
-                    3
-                </li>
-            </ul>
+const Work = () => {
+    const horizontalRef = useRef(null);
+    const sectionRef = useRef([]);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const horizontal = horizontalRef.current;
+        const sections = sectionRef.current;
+
+        let scrollTween = gsap.to(sections, {
+            xPercent: -120 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: horizontal,
+                start: "top 56px",
+                end: () => "+=" + horizontal.offsetWidth,
+                pin: true,
+                scrub: 1,
+                markers: false,
+                invalidateOnRefresh: true,
+                anticipatePin: 1,
+            }
+        })
+
+        return () => {
+            scrollTween.kill();
+        };
+    }, []);
+
+    return (
+
+        <section className="work" id="port" ref={horizontalRef}>
+            <div className="port__inner">
+                <h2 className="port__title">
+                    WORK 
+                </h2>
+                <div className="port__wrap">
+                    {portText.map((port, key) => (
+                        <article
+                            className={`port__item p${key + 1}`}
+                            key={key}
+                            ref={(el) => (sectionRef.current[key] = el)}
+                        >
+                            <span className="num">{port.num}.</span>
+                            <a
+                                href={port.code}
+                                target="_blank"
+                                className="img"
+                                rel="noreferrer noopener"
+                            >
+                                <img src={port.img} alt={port.name} />
+                            </a>
+                            <h3 className="title">{port.title}</h3>
+                            <p className="desc">{port.desc}</p>
+                            <a
+                                href={port.view}
+                                target="_blank"
+                                className="site"
+                                rel="noreferrer noopener"
+                            >
+                                사이트 보기</a>
+                        </article>
+                    ))}
+                </div>
+            </div>
         </section>
     )
 }
