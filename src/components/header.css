@@ -6,6 +6,7 @@ header {
     z-index: 9999;
     color: #fff;
 }
+
 header>div {
     height: 80px;
     padding: 0 40px;
@@ -14,10 +15,21 @@ header>div {
     justify-content: space-between;
     align-items: center;
 }
-.gnb {
+
+/* .gnb {
     display: flex;
 }
 .gnb>li {
     margin-left: calc(100vw * (80 / 1400));
     font-size: 15px;
+} */
+.gnb{
+    display: flex;
+}
+.gnb.show {
+    display: block;
+}
+.gnb>li>a{
+    display: inline-block;
+    padding: 10px;
 }
