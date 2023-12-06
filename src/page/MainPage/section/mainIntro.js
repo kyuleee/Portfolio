@@ -10,17 +10,11 @@ const MainIntro = () => {
         <div className="mainIntro">
             <section>
                 <article>
-                    <p className='mainTxt'>FRONTEND DEVELOPER</p>
-                    
-                    {/* <Canvas>
-                        <OrbitControls enableZoom={false} autoRotate={true}/>
-                        <ambientLight intensity={1}/>
-                        <directionalLight position={[3,2,1]} />
-                        <mesh>
-                            <boxGeometry args={[1,1,1]} />
-                            <meshStandardMaterial color='white'/>
-                        </mesh>
-                    </Canvas> */}
+                    <p >
+                        <svg viewBox="0 0 1320 300" className='mainTxt'>
+                            <text x="50%" y="50%" dy="40px" text-anchor="middle">FRONTEND DEVELOPER</text>
+                        </svg>
+                    </p>
                     <Me />
                 </article>
             </section>

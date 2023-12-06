@@ -65,36 +65,22 @@ const Test1 = () => {
         gltfLoader.load(model, (gltf) => {
             const imgs = gltf.scene.children[0];
             scene.add(imgs)
-            imgs.postiion.y=-5;
-            // imgs.position.z=4;   
+
+            // imgs.postiion.y=-5;
             mixer = new THREE.AnimationMixer();
-            const actions = [];
-            actions[0] = mixer.clipAction(imgs.animation[0]);
-            actions[1] = mixer.clipAction(imgs.animation[1]);
-            actions[2] = mixer.clipAction(imgs.animation[2]);
+            // const actions = [];
         })
-        
 
-
-
-        //mesh
-        // const gemetry = new THREE.BoxGeometry(1,1,1)
-        // const material = new THREE.MeshStandardMaterial({
-        //     color : 'red'
-        // }) 
-        // const mesh = new THREE.Mesh(gemetry, material)
-        // scene.add(mesh);
 
         //애니메이션
         const clock = new THREE.Clock();
         const animate = () => {
             const time = clock.getElapsedTime();
             controls.update();
-            // controls.rotateSpeed=10;
+            controls.rotateSpeed=10;
             if (mixer) mixer.update(time);
             renderer.render(scene, camera);
             renderer.setAnimationLoop(animate);
-            
         }
         animate();
 

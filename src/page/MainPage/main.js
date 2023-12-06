@@ -4,7 +4,7 @@ import MainIntro from "./section/mainIntro";
 import Contact from "./section/contact";
 // import {About, Work, MainIntro} from './section';
 import './main.css';
-import ProjectSection from "./section/project";
+import Project from "./section/project";
 
 const Main = ()=>{
     return(
@@ -12,7 +12,7 @@ const Main = ()=>{
             <MainIntro/>
             <About/>
             <Work/>
-            <ProjectSection/>
+            <Project/>
             <Contact/>
             <div className="scrolling">
                 <p>scrolling</p>

@@ -1,71 +1,73 @@
 import './work.css';
-// import img1 from '../../../img/sample1.png'
-import img1 from '../../../img/kolon.jpg';
-import img2 from '../../../img/dokdo.jpg';
-// import img3 from '../../../img/domino.jpg';
+// import img1 from '../../../img/kolon.jpg';
+// import img2 from '../../../img/dokdo.jpg';
+// import workBox from '../../../components/contentBox/workBox';
+import Workjson from '../../../data/work.json';
+import { useState } from 'react';
 
-const Work = ()=>{
-    return(
+
+const Work = () => {
+    const [modalTap, setModalTap] =useState(false);
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const modalWindowTap = (item)=>{
+        setSelectedItem(item);
+        setModalTap(true);
+    }
+
+
+    return (
         <section className="work">
-            <h2>WORK</h2>
-            <ul className='workList'>
-                <li>
-                    <div className='usecase'>
-                        <div className='front'>
-                            <img src={img1}/>
-                            <p>KOLON</p>
+            <div className='work_inner'>
+                <h2>WORK</h2>
+                <ul className='workList'>
+                {Workjson.map(item => (
+                    <li key={item.key} onClick={()=>modalWindowTap(item)}>
+                        <div className='usecase'>
+                            <div className='front'>
+                                <img src={item.img}/>
+                                <p>{item.title}</p>
+                            </div>
+                            <div className='back'>
+                                <h3>{item.title}</h3>
+                                <p dangerouslySetInnerHTML={{ __html:item.desc}}/>
+                            </div>
                         </div>
-                        <div className='back'>
-                            <h3>KOLON</h3>
-                            <p>grid 스타일을 이용한 레이아웃</p>
-                            <ul className='workDetail'>
-                                <li>
-                                    <strong>사용기술</strong>
-                                    <p>HTML, CSS</p>
-                                </li>
-                                <li>
-                                    <strong>사이트주소</strong>
-                                    <p>https://www.kolon.com/kr/main</p>
-                                </li>
-                                <li>
-                                    <strong>github</strong>
-                                    <p>https://github.com/kyuleee</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div className='usecase'>
-                        <div className='front'>
-                            <img src={img2}/>
-                            <p>독도전시관</p>
-                        </div>
-                        <div className='back'>
-                            <h3>KOLON</h3>
-                            <p>grid 스타일을 이용한 레이아웃</p>
-                            <ul className='workDetail'>
-                                <li>
-                                    <strong>사용기술</strong>
-                                    <p>HTML, CSS</p>
-                                </li>
-                                <li>
-                                    <strong>사이트주소</strong>
-                                    <p>https://www.kolon.com/kr/main</p>
-                                </li>
-                                <li>
-                                    <strong>github</strong>
-                                    <p>https://github.com/kyuleee</p>
-                                </li>
-                            </ul>
+                    </li>
+                ))}
+                </ul>
+                {modalTap &&
+                    <div>
+                        <div onClick={()=>setModalTap()}>
+                            <div>
+                                <p dangerouslySetInnerHTML={{ __html:selectedItem.comm}}/>
+                                <ul>
+                                    <li>디테일</li>
+                                    <li>{selectedItem.title}</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <img src={selectedItem.img}/>
+                                    </li>
+                                    <li>
+                                        <strong>사용기술</strong>
+                                        <p>{selectedItem.use_stack}</p>
+                                    </li>
+                                    <li>
+                                        <strong>사이트주소</strong>
+                                        <a href={selectedItem.code} target='_blank' rel='noopener'>{selectedItem.code}</a>
+                                    </li>
+                                    <li>
+                                        <strong>github</strong>
+                                        <a href={selectedItem.view} target='_blank' rel='noopener'>{selectedItem.view}</a>
+                                        {/* <p>{selectedItem.view}</p> */}
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </li>
-                
-                <li>
-                    3
-                </li>
-            </ul>
+                }
+            </div>
         </section>
     )
 }
