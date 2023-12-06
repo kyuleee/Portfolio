@@ -4,6 +4,7 @@ import {useState, useRef, useEffect} from 'react';
 import Header from './components/header';
 import Main from './page/MainPage/main';
 import link from './utils/link';
+import MyComponent from './components/mycomponent';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   },[]);
   return (
     <div className="App">
+      <MyComponent/>
       <Header/>
       <Routes>
         <Route path='/Portfolio/' element={<Main />}></Route>

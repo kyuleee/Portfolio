@@ -1,0 +1,46 @@
+
+.landing {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 20000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.landing .title {
+    color: #fff;
+    max-width: 45%;
+    text-align: center;
+    mix-blend-mode: difference;
+    z-index: 2;
+    transform: translateY(40px);
+}
+
+.landing .bg {
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    width: 50%;
+    height: 100%;
+    transform: scaleX(0);
+}
+
+.landing .bg-l {
+    left: 0;
+    transform-origin: left center;
+}
+
+.landing .bg-r {
+    left: 50%;
+    transform-origin: right center;
+}

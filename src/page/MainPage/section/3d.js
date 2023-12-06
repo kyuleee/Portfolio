@@ -4,7 +4,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 // import model from '../../../img/laptop_ani.gltf';
 // import model from '../../../img/laptop2.glb';
-import model from '../../../img/me5.glb';
+// import model from '../../../img/me5.glb';
+import model from '../../../img/astro04.glb';
+
 
 const Test1 = () => {
     const main = useRef();
@@ -29,9 +31,9 @@ const Test1 = () => {
             0.1,
             100
         );
-        camera.position.z = 5;
-        camera.position.y = 1;
-        camera.position.x = 1;
+        camera.position.z = 4;
+        camera.position.y = 3;
+        camera.position.x =2;
         scene.add(camera)
 
         //light
@@ -42,6 +44,13 @@ const Test1 = () => {
         directionLight.position.x = 2;
         directionLight.position.y = 2;
         scene.add(directionLight);
+
+        const light2 = new THREE.PointLight( "whtie", 15);
+        light2.position.z= 1.7; 
+        light2.position.x= 0; 
+        light2.position.y= -2.5;
+        light2.castShadow = true; // default false
+        scene.add( light2 );
 
         //마우스로 움직에 할 수 있음
         const controls = new OrbitControls(camera, renderer.domElement);
@@ -54,22 +63,20 @@ const Test1 = () => {
         let mixer;
 
         const gltfLoader = new GLTFLoader();
+        gltfLoader.load(model, (gltf) => {
+            const imgs = gltf.scene.children[0];
+            scene.add(imgs);
+            gltf.scene.rotation.z += 0.01;
+            mixer = new THREE.AnimationMixer(gltf.scene);
+            const action = mixer.clipAction(imgs.animation[0]);;
+            action[0] = mixer.clipAction(imgs.animation[0]);
+            action.play();
+        })
         // gltfLoader.load(model, (gltf) => {
         //     const imgs = gltf.scene.children[0];
         //     scene.add(imgs)
-        //     mixer = new THREE.AnimationMixer(gltf.scene);
-        //     const action = mixer.clipAction(imgs.animation[0]);;
-        //     action[0] = mixer.clipAction(imgs.animation[0]);
-        //     action.play();
+        //     mixer = new THREE.AnimationMixer();
         // })
-        gltfLoader.load(model, (gltf) => {
-            const imgs = gltf.scene.children[0];
-            scene.add(imgs)
-
-            // imgs.postiion.y=-5;
-            mixer = new THREE.AnimationMixer();
-            // const actions = [];
-        })
 
 
         //애니메이션
@@ -81,6 +88,7 @@ const Test1 = () => {
             if (mixer) mixer.update(time);
             renderer.render(scene, camera);
             renderer.setAnimationLoop(animate);
+            
         }
         animate();
 

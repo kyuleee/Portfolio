@@ -33,7 +33,7 @@
     height: 100vh;
     z-index: 99;
     text-transform: uppercase;
-    animation: stroke 5s 1 alternate;
+    animation: stroke 5.5s 1 alternate;
     fill: rgba(72,138,204,1);
     /* fill: #27c4d5; */
     color: #fff;

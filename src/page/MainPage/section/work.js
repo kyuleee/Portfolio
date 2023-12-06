@@ -1,7 +1,4 @@
 import './work.css';
-// import img1 from '../../../img/kolon.jpg';
-// import img2 from '../../../img/dokdo.jpg';
-// import workBox from '../../../components/contentBox/workBox';
 import Workjson from '../../../data/work.json';
 import { useState } from 'react';
 
@@ -14,7 +11,6 @@ const Work = () => {
         setSelectedItem(item);
         setModalTap(true);
     }
-
 
     return (
         <section className="work">
