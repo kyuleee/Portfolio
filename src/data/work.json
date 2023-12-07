@@ -11,9 +11,9 @@
     },
     {
         "key": 2,
-        "title": "DOKDO",
+        "title": "독도전시관",
         "comm":"",
-        "desc": "미디어 쿼리를 css 속성과 결합해만든 반응형 웹",
+        "desc": "미디어 쿼리를 css 속성과 결합해만든 <span>반응형 웹</span>",
         "img": "/Portfolio/img/dokdo.jpg",
         "use_stack":"HTML, CSS",
         "code":"https://github.com/kyuleee/Dokdo",
@@ -22,8 +22,8 @@
     {
         "key": 3,
         "title": "DOMINO",
-        "desc": "REACT 프레임워크를 이용한 반응형",
         "comm":"REACT를 이용하여 반응형 웹까지 만들어",
+        "desc": "웹페이지에 생동감을 불어넣기 위해 <span>Javascript</span>을 이용해 만든 반응형 웹",
         "img": "/Portfolio/img/domino.jpg",
         "use_stack":"HTML, CSS, JAVASCRIPT",
         "code":"https://github.com/kyuleee/dominoPizza",

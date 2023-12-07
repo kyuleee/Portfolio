@@ -13,7 +13,7 @@ function App() {
   },[]);
   return (
     <div className="App">
-      <MyComponent/>
+      {/* <MyComponent/> */}
       <Header/>
       <Routes>
         <Route path='/Portfolio/' element={<Main />}></Route>
