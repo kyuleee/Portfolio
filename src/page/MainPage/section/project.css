@@ -3,7 +3,9 @@
     /* height: 100vh; */
 }
 .site__inner {
-    padding: 16px;
+    /* padding: 16px; */
+    width: 1400px;
+    margin: 0 auto;
 }
 
 .site__title {
@@ -59,7 +61,7 @@
     line-height: 1;
     font-weight: 900;
     position: absolute;
-    left: 1vw;
+    /* left: 1vw; */
     top: 1vw;
 }
 

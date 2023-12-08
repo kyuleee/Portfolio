@@ -33,14 +33,15 @@ const Modal = (props) => {
                     {props.selectedItem && (
                         <div className='workDetail'>
                             <div>
-                                <p dangerouslySetInnerHTML={{ __html: props.selectedItem.comm }} />
-                                <ul>
+                                <img src={props.selectedItem.gif} alt={props.selectedItem.title} />
+                                <ul className='worktxt'>
                                     {/* <li>{props.selectedItem.title}</li> */}
                                     <li>
-                                        <img src={props.selectedItem.img} alt={props.selectedItem.title} />
+                                        <strong>Review</strong>
+                                        <p dangerouslySetInnerHTML={{ __html: props.selectedItem.comm }} />
                                     </li>
                                     <li>
-                                        <strong>사용기술</strong>
+                                        <strong>Use Stack</strong>
                                         <p>{props.selectedItem.use_stack}</p>
                                     </li>
                                     <li>

@@ -22,8 +22,8 @@ const ProjectSection = () => {
                                 <div>{site.text[2]}</div>
                             </div>
                             <div className="btn">
-                                <a href={site.code}>github</a>
-                                <a href={site.view}>viewmore</a>
+                                <a href={site.code} target='_blank' rel='noopener noreferrer'>github</a>
+                                <a href={site.view} target='_blank' rel='noopener noreferrer'>viewmore</a>
                             </div>
                             <div className="info">
                                 <span>{site.info[0]}</span>

@@ -57,8 +57,6 @@
 }
 .front>p{
     position: absolute;
-    /* left: 5px;
-    right: 5px; */
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -66,6 +64,7 @@
     margin-top: 100%;
     transition: opacity .1s;
     font-size: 32px;
+    font-weight: 700;
 }
 .front>img{
     width: 100%;
@@ -90,16 +89,16 @@
     word-break: keep-all;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    /* color: rgba(255,255,255,0.6); */
     transition: opacity .5s;
     z-index: 99;
+    text-align: center;
 }
 .back>h3{
     color: #fff;
-    margin-bottom: 5px;
-    font-size: 24px;
+    margin-bottom: 10px;
+    font-size: 28px;    
 }
 .back>p{
     color: rgba(255,255,255,0.6);

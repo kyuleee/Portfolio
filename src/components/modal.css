@@ -25,7 +25,8 @@
   }
   .modal > section {
     width: 90%;
-    max-width: 450px;
+    /* max-width: 450px; */
+    width: 50vw;
     margin: 0 auto;
     border-radius: 1rem;
     /* background-color: #fff; */
@@ -40,6 +41,8 @@
     /* background-color: #f1f1f1; */
     background-color: #000016;
     font-weight: 700;
+    color: #27C4D5;
+    font-size: 36px;
   }
   .modal > section > header button {
     position: absolute;
@@ -58,8 +61,31 @@
     /* border-top: 1px solid #dee2e6; */
   }
   .modal img{
-    width: 100px;height: auto;
+    width: 50%;
+    height: 30%;
   }
+  .workDetail>div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .worktxt{
+    padding-left: 5.7%;
+  }
+  .worktxt>li{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .worktxt>li>strong{
+    color: #27C4D5;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .worktxt>li>p,.worktxt>li>a{
+    font-size: 20px;
+  }
+
+
   
   @keyframes fadeIn {
     from {

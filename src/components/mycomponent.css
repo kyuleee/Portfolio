@@ -18,7 +18,8 @@
 }
 
 .landing .title {
-    color: #fff;
+    /* color: #fff; */
+    color: #27C4D5;
     max-width: 45%;
     text-align: center;
     mix-blend-mode: difference;
@@ -29,7 +30,7 @@
 .landing .bg {
     position: absolute;
     top: 0;
-    background-color: #000;
+    background-color: #000016;
     width: 50%;
     height: 100%;
     transform: scaleX(0);

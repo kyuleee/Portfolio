@@ -48,10 +48,10 @@ const MyComponent = () => {
   }, []); 
 
   return (
-    <section class="landing">
-        <h2 class="title hidden" >WELCOME TO MY PORTFOLIO</h2>
-        <div class="bg bg-l"></div>
-        <div class="bg bg-r"></div>
+    <section className="landing">
+        <h2 className="title hidden" >WELCOME TO MY PORTFOLIO</h2>
+        <div className="bg bg-l"></div>
+        <div className="bg bg-r"></div>
     </section>
   );
 };

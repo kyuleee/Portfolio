@@ -13,19 +13,9 @@ const Work = () => {
         setModalTap(true);
     }
 
-    // const [modalOpen, setModalOpen] = useState(false)
-
-    // const openModal = (item) => {
-    //     setModalOpen(true)
-    //     setSelectedItem(item);
-    // }
-    // const closeModal = () => {
-    //     setModalOpen(false)
-    // }
     const closeModal = () => {
         setModalTap(false)
     }
-   
 
     return (
         <section className="work">
