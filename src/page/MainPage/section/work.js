@@ -48,33 +48,6 @@ const Work = () => {
                     ))}
                 </ul>
                 <Modal open={modalTap} close={closeModal} header={selectedItem} selectedItem={selectedItem}/>
-                {/* {modalTap &&
-                    <div className='workDetail'>
-                        <div onClick={() => setModalTap()}>
-                            <div>
-                                <p dangerouslySetInnerHTML={{ __html: selectedItem.comm }} />
-                                <ul>
-                                    <li>{selectedItem.title}</li>
-                                    <li>
-                                        <img src={selectedItem.img} />
-                                    </li>
-                                    <li>
-                                        <strong>사용기술</strong>
-                                        <p>{selectedItem.use_stack}</p>
-                                    </li>
-                                    <li>
-                                        <strong>사이트주소</strong>
-                                        <a href={selectedItem.code} target='_blank' rel='noopener noreferrer'>{selectedItem.code}</a>
-                                    </li>
-                                    <li>
-                                        <strong>github</strong>
-                                        <a href={selectedItem.view} target='_blank' rel='noopener noreferrer'>{selectedItem.view}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                } */}
             </div>
         </section>
     )
