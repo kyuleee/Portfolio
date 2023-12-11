@@ -1,24 +1,8 @@
-
-export const headerNav = [
+export const dd = [
     {
-        title: "ABOUT ME",
-        url: "#aboutme"
-    },
-    {
-        title: "WORK",
-        url: "#work"
-    },
-    {
-        title: "PROJECT",
-        url: "#project"
-    },
-    {
-        title: "CONTACT",
-        url: "#contact"
+        text:'https://velog.io/@seoltang/scroll-navbar-button-useref'
     }
 ]
-
-
 export const siteText = [
     {
         text: ["make", "site compliant with", "webstandard"],

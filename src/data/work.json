@@ -8,7 +8,7 @@
         "use_stack":"HTML, CSS, JAVASCRIPT",
         "code":"https://github.com/kyuleee/kolon",
         "view":"https://kyuleee.github.io/kolon/",
-        "gif":"/Portfolio/img/test01.gif"
+        "gif":"/Portfolio/img/kolon.png"
     },
     {
         "key": 2,
@@ -19,7 +19,7 @@
         "use_stack":"HTML, CSS",
         "code":"https://github.com/kyuleee/Dokdo",
         "view":"https://kyuleee.github.io/Dokdo/",
-        "gif":"/Portfolio/img/test01.gif"
+        "gif":"/Portfolio/img/dokdoD.png"
     },
     {
         "key": 3,
@@ -30,6 +30,6 @@
         "use_stack":"HTML, CSS, JAVASCRIPT",
         "code":"https://github.com/kyuleee/dominoPizza",
         "view":"https://kyuleee.github.io/dominoPizza/",
-        "gif":"/Portfolio/img/test01.gif"
+        "gif":"/Portfolio/img/dominoD.png"
     }
 ]

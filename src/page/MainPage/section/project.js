@@ -1,10 +1,12 @@
 import './project.css';
-import {siteText} from '../../../data/index';
+import { siteText } from '../../../data/index';
+import { forwardRef } from 'react';
 
-const ProjectSection = () => {
+
+const ProjectSection = forwardRef(function ProjectSection(props,ref){
 
     return (
-        <div className="projectSection">
+        <div className="projectSection" id='project' ref={reviewRef => (ref.current[2] = reviewRef)}>
             <div className="site__inner">
                 <h2 className="site__title">
                     PROJECT
@@ -36,6 +38,6 @@ const ProjectSection = () => {
             </div>
         </div>
     );
-}
+});
 
 export default ProjectSection;

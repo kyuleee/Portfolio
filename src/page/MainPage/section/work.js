@@ -1,10 +1,9 @@
 import './work.css';
 import Workjson from '../../../data/work.json';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, forwardRef } from 'react';
 import Modal from '../../../components/modal';
 
-
-const Work = () => {
+const Work = forwardRef(function Work(props,ref){
     const [modalTap, setModalTap] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
 
@@ -18,7 +17,7 @@ const Work = () => {
     }
 
     return (
-        <section className="work">
+        <section className="work" ref={reviewRef => (ref.current[1] = reviewRef)}>
             <div className='work_inner'>
                 <h2>WORK</h2>
                 <ul className='workList'>
@@ -41,6 +40,6 @@ const Work = () => {
             </div>
         </section>
     )
-}
+});
 
 export default Work;

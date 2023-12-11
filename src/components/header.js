@@ -1,30 +1,56 @@
 import { Routes, Route, Link } from 'react-router-dom';
-import { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './header.css';
-import logo from '../img/portLogo.png';
-import { headerNav } from "../data/index";
+import logo from '../img/LOGO.png';
 
-const Header = () => {
-    const [show, setShow] = useState(false);
+const Header = ({ scrollRef }) => {
+    const headerNav = [
+        { idx: 0, name: 'ABOUT ME' },
+        { idx: 1, name: 'WORK' },
+        { idx: 2, name: 'PROJECT' },
+        { idx: 3, name: 'CONTACT' }
+    ];
+    const [navIndex, setNavIndex] = useState(null);
+    const navRef = useRef([]);
 
-    const toggleMenu = () => {
-        setShow((prevShow) => !prevShow);
-    }
+    useEffect(() => {
+        scrollRef.current[navIndex]?.scrollIntoView({ behavior: 'smooth'});
+        setNavIndex(null);
+    }, [scrollRef, navIndex]);
+
+    useEffect(() => {
+
+        const changeNavBtnStyle = () => {
+            console.log('Scroll Event Triggered');
+            scrollRef.current.forEach((ref, idx) => {
+                if (ref.offsetTop - 200 < window.scrollY) {
+                    navRef.current.forEach(ref => {
+                        // ref.className = ref.className.replace('active','');
+                        ref.classList.remove('active');
+                    });
+                    // navRef.current[idx].className += 'active';
+                    navRef.current[idx].classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', changeNavBtnStyle);
+
+        return () => {
+            window.removeEventListener('scroll', changeNavBtnStyle);
+        };
+    }, [scrollRef]);
+
+
 
     return (
         <header>
             <div>
                 <h1><Link to='/Portfolio/'><img src={logo} /></Link></h1>
-                {/* <ul className="gnb">
-                    <li>ABOUT ME</li>
-                    <li>WORK</li>
-                    <li>PROJECT</li>
-                    <li>CONTACT</li>
-                </ul> */}
-                <ul className={`gnb ${show ? "show" : ""}`}>
-                    {headerNav.map((nav, key) => (
-                        <li key={key}>
-                            <a href={nav.url}>{nav.title}</a>
+                <ul className='gnb'>
+                    {headerNav.map(({ idx, name }) => (
+                        <li key={idx} ref={ref => (navRef.current[idx] = ref)} onClick={() => {setNavIndex(idx);}}>
+                            {name}
                         </li>
                     ))}
                 </ul>

@@ -10,7 +10,7 @@ const MainIntro = () => {
                 <article>
                     <p>
                         <svg viewBox="0 0 1320 300" className='mainTxt'>
-                            <text x="50%" y="50%" dy="40px" text-anchor="middle">FRONTEND DEVELOPER</text>
+                            <text x="50%" y="50%" dy="40px" textAnchor="middle">FRONTEND DEVELOPER</text>
                         </svg>
                     </p>
                     <Me />

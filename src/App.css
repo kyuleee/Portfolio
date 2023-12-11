@@ -1,3 +1,8 @@
+@import './asset/font/font.css';
+html{
+  font-family: "Roboto", "NotoSansKR";
+}
+
 *{
   margin: 0; padding: 0;
   box-sizing: border-box;

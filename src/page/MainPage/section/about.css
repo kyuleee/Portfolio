@@ -74,7 +74,7 @@
     margin-right: 35px;
 }
 
-.fstline>div:first-child{
+/* .fstline>div:first-child{
     background: url('../../../img/html.png') no-repeat top center;
     background-size: contain;
 }
@@ -120,4 +120,4 @@
 .trdline>div:last-child{
     background: url('../../../img/vscode.png') no-repeat top center;
     background-size: contain;
-}
+} */

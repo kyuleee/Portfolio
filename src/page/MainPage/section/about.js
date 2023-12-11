@@ -1,9 +1,10 @@
 import './about.css';
 import me from '../../../img/meImg.jpg';
+import { forwardRef } from 'react';
 
-const About = ()=>{
+const About = forwardRef(function About(props,ref){
     return(
-        <section className="about">
+        <section className="about" ref={reviewRef => (ref.current[0] = reviewRef)}>
             <article className='contWrap'>
                 <div className='profile'>
                     <img src={me} alt='민규리 이미지'/>
@@ -103,6 +104,6 @@ const About = ()=>{
             
         </section>
     );
-}
+});
 
 export default About;

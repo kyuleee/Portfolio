@@ -1,12 +1,14 @@
+import { forwardRef } from 'react';
 import './contact.css';
 
-const Contact = ()=>{
+const Contact = forwardRef(function Contact(props,ref){
     return(
-        <section className='contact'>
+        <section className='contact' ref={reviewRef => (ref.current[3] = reviewRef)}>
             <h2>CONTACT</h2>
         </section>
         
     );
 
-}
+});
+
 export default Contact;

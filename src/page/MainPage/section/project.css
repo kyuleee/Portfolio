@@ -11,10 +11,13 @@
 .site__title {
     position: sticky;
     top: 70px;
-    left: 0;
-    width: 70%;
+    /* left: 0; */
+    /* right: 0; */
+    /* width: 70%; */
+    float: right;
     height: 5vw;
-    font-size: 4vw;
+    /* font-size: 4vw; */
+    font-size: 5vw;
     font-weight: 900;
     line-height: 1.6;
     text-transform: uppercase;
