@@ -1,11 +1,10 @@
 import * as THREE from 'three';
-import { useRef, useEffect } from 'react';
+import React,{ useRef, useEffect } from 'react';
+import { useAnimations, useFBX, useGLTF } from '@react-three/drei';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
-// import model from '../../../img/laptop_ani.gltf';
-// import model from '../../../img/laptop2.glb';
-// import model from '../../../img/me5.glb';
-import model from '../../../img/astro04.glb';
+// import model from '../../../img/astro04.glb';
+import model from '../../../img/myavator.glb';
 
 
 const Test1 = () => {
@@ -34,7 +33,7 @@ const Test1 = () => {
         // camera.position.z = 5;
         // camera.position.y = 3;
         // camera.position.x =2;
-        camera.position.set(2, 3, 5);
+        camera.position.set(0, 2, 3);
         scene.add(camera)
 
         //light
@@ -46,12 +45,12 @@ const Test1 = () => {
         directionLight.position.y = 2;
         scene.add(directionLight);
 
-        const light2 = new THREE.PointLight("white", 80);
-        light2.position.z = 1.7;
-        light2.position.x = 0;
-        light2.position.y = -2.5;
-        light2.castShadow = true; // default false
-        scene.add(light2);
+        // const light2 = new THREE.PointLight("white", 80);
+        // light2.position.z = 1.7;
+        // light2.position.x = 0;
+        // light2.position.y = -2.5;
+        // light2.castShadow = true; // default false
+        // scene.add(light2);
 
         //마우스로 움직에 할 수 있음
         const controls = new OrbitControls(camera, renderer.domElement);

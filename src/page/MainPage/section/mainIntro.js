@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import './mainIntro.css';
-import Me from './3d'
+// import Me from './3d'
+import { Canvas } from "@react-three/fiber";
+import { Experience } from './Experience';
 
 const MainIntro = () => {
 
@@ -13,7 +15,11 @@ const MainIntro = () => {
                             <text x="50%" y="50%" dy="40px" textAnchor="middle">FRONTEND DEVELOPER</text>
                         </svg>
                     </p>
-                    <Me />
+                    {/* <Me /> */}
+                    <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
+                        <color attach="background" args={["#000016"]} />
+                        <Experience />
+                    </Canvas>
                 </article>
             </section>
         </div>
