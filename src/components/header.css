@@ -5,6 +5,10 @@ header {
     width: 100%;
     z-index: 9999;
     color: #fff;
+    font-size: 18px;
+}
+.scrollDown{
+    transform: translateY(-80px);
 }
 
 header>div {
@@ -19,8 +23,17 @@ header>div {
 .gnb{
     display: flex;
 }
-
+.gnb li{
+    cursor: pointer;
+    padding: 15px 30px;
+    /* border: 1px solid red; */
+}
 .gnb li.active {
+    border-bottom: 2px solid gold;
+    color: gold;
+    font-weight: bold;
+}
+.active {
     border-bottom: 2px solid gold;
     color: gold;
     font-weight: bold;

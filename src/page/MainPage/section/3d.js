@@ -74,9 +74,9 @@ const Test1 = () => {
             const imgs = gltf.scene.children[0];
             scene.add(imgs);
             mixer = new THREE.AnimationMixer(gltf.scene);
-            const action = mixer.clipAction(imgs.animation[0]);;
-            action[0] = mixer.clipAction(imgs.animation[0]);
-            action.play();
+            // const action = mixer.clipAction(imgs.animation[0]);;
+            // action[0] = mixer.clipAction(imgs.animation[0]);
+            // action.play();
         })
         // gltfLoader.load(model, (gltf) => {
         //     const imgs = gltf.scene.children[0];

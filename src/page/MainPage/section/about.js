@@ -11,8 +11,8 @@ const About = forwardRef(function About(props,ref){
                     <h3>MIN KYU LEE</h3>
                     <p>
                         안녕하세요
-                        <br/>반갑습니다
-                        <br/>연락주세요
+                        <br/>프론트엔드 개발자입니다. 저는 UI 효과, 애니메이션, 직관적이고 역동적인 사용자 경험 제작에 깊은 열정을 갖고 있습니다.
+                        전체 프론트엔드 스펙트럼에 관심이 있고 긍정적인 사람들과 함께 야심찬 프로젝트에 참여하고 있습니다. 
                     </p>
 
                 </div>
@@ -51,7 +51,7 @@ const About = forwardRef(function About(props,ref){
                                 </li>
                                 <li>
                                     <p>2023.02</p>
-                                    <p>webGL 수료</p>
+                                    <p>WebGL 수료</p>
                                 </li>
                             </ul>
                         </div>

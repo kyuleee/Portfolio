@@ -14,6 +14,7 @@ export const siteText = [
             "production period : 3 weeks",
             "use stack : HTML5, CSS3, JavsScript",
         ],
+        git:"/Portfolio/img/golf.gif"
     },
     {
         text: ["make", "site compliant with", "react.js"],
@@ -25,6 +26,7 @@ export const siteText = [
             "production period : 4 weeks",
             "use stack : HTML5, CSS3, node.js, react",
         ],
+        git:"/Portfolio/img/golf.gif"
     },
     {
         text: ["make", "site compliant with", "vue.js"],
@@ -36,6 +38,7 @@ export const siteText = [
             "production period : 4 weeks",
             "use stack : HTML5, CSS3, node.js, react",
         ],
+        git:"/Portfolio/img/golf.gif"
     },
     {
         text: ["make", "site compliant with", "next.js"],
@@ -47,5 +50,6 @@ export const siteText = [
             "production period : 4 weeks",
             "use stack : HTML5, CSS3, node.js, react",
         ],
+        git:"/Portfolio/img/golf.gif"
     },
 ];

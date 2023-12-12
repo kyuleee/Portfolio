@@ -35,7 +35,6 @@ const Modal = (props) => {
                             <div>
                                 <img src={props.selectedItem.gif} alt={props.selectedItem.title} />
                                 <ul className='worktxt'>
-                                    {/* <li>{props.selectedItem.title}</li> */}
                                     <li>
                                         <strong>Review</strong>
                                         <p dangerouslySetInnerHTML={{ __html: props.selectedItem.comm }} />
