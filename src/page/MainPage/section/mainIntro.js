@@ -16,7 +16,7 @@ const MainIntro = () => {
                         </svg>
                     </p>
                     {/* <Me /> */}
-                    <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
+                    <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }} style={{position:'absolute'}}>
                         <color attach="background" args={["#000016"]} />
                         <Experience />
                     </Canvas>

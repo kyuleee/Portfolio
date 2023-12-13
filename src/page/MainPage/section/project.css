@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 .projectSection>h2{
-    font-size: 180px;
+    font-size: 160px;
     text-align: right;
 }
 .banner{
@@ -24,7 +24,7 @@
 .content{
     position: relative;
     /* width: 550px; */
-    width: 30%;
+    width: 35%;
     display: none;
     visibility: hidden;
     transform: scale(0);
@@ -135,8 +135,8 @@
 .carousel .carousel-item img{
     width: 235px;
     border-radius: 10px;
-    transform: translateX(8px) translateY(-100px);
-    object-fit: cover;
+    /* transform: translateX(8px) translateY(-100px); */
+    object-fit: fill;
     object-position: center;
     /* width: 100%; 
     border-radius: 10px;

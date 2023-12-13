@@ -16,7 +16,7 @@ export const Experience = () => {
                 />
                 <Avatar />
             </group>
-            <ambientLight intensity={1} />
+            <ambientLight intensity={3} />
         </>
 
     );
