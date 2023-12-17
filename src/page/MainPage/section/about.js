@@ -2,17 +2,18 @@ import './about.css';
 import me from '../../../img/meImg.jpg';
 import { forwardRef } from 'react';
 
-const About = forwardRef(function About(props,ref){
-    return(
+const About = forwardRef(function About(props, ref) {
+    return (
         <section className="about" ref={reviewRef => (ref.current[0] = reviewRef)}>
             <article className='contWrap'>
                 <div className='profile'>
-                    <img src={me} alt='민규리 이미지'/>
+                    <img src={me} alt='민규리 이미지' />
                     <h3>MIN KYU LEE</h3>
                     <p>
-                        안녕하세요
-                        <br/>프론트엔드 개발자입니다. 저는 UI 효과, 애니메이션, 직관적이고 역동적인 사용자 경험 제작에 깊은 열정을 갖고 있습니다.
-                        전체 프론트엔드 스펙트럼에 관심이 있고 긍정적인 사람들과 함께 야심찬 프로젝트에 참여하고 있습니다. 
+                        안녕하세요 프론트엔드 개발자입니다. 
+                        <br/>스크립트 및 구조를 포함한 모든 기반이 탄탄한,
+                        누구라도 한눈에 매력적으로 느낄 수 있는
+                        웹 사이트를 구축하고 싶습니다.
                     </p>
 
                 </div>
@@ -32,8 +33,8 @@ const About = forwardRef(function About(props,ref){
                                 <li>
                                     <p>Contact</p>
                                     <p>
-                                    mindy7453@naver.com
-                                    <br/>010-7777-7777
+                                        mindy7453@naver.com
+                                        
                                     </p>
                                 </li>
                             </ul>
@@ -43,15 +44,15 @@ const About = forwardRef(function About(props,ref){
                             <ul>
                                 <li>
                                     <p>2018.02</p>
-                                    <p>고등학교 졸업</p>
+                                    <p>혜성여자고등학교 졸업</p>
                                 </li>
                                 <li>
                                     <p>2023.02</p>
-                                    <p>컴퓨터공학 졸업</p>
+                                    <p>삼육대 컴퓨터공학 전공 졸업</p>
                                 </li>
                                 <li>
-                                    <p>2023.02</p>
-                                    <p>WebGL 수료</p>
+                                    <p>2023.12</p>
+                                    <p>WebGL 프론트엔드 웹앱개발자 양성과정 수료</p>
                                 </li>
                             </ul>
                         </div>
@@ -78,7 +79,7 @@ const About = forwardRef(function About(props,ref){
                                     <div></div>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div className='certificate'>
                             <h3>CERTIFICATE</h3>
@@ -98,10 +99,10 @@ const About = forwardRef(function About(props,ref){
                             </ul>
                         </div>
                     </div>
-                        
+
                 </div>
             </article>
-            
+
         </section>
     );
 });

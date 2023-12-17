@@ -4,11 +4,55 @@
     padding: 0 40px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .contact>h2{
     writing-mode: vertical-lr;
-    /* font-size: 180px; */
-    font-size: 10rem;
+    font-size: 160px;
     color: #27C4D5;
 }
+button{
+    background: none;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.contactTxt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactTxt>div{
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 28px;
+}
 
+.contactTxt>div span, a{
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.contactTxt>div span:hover{
+    color: #FD9F2A;
+}
+.contactTxt>div>p{
+    margin-right: 60px;
+}
+.contactTxt>div a:hover{
+    color: #FD9F2A;
+}
+.copyright{
+    text-align: center;
+    color: #a0a0a0;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}

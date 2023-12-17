@@ -29,7 +29,7 @@
     font-family: stolzl,pretendard,-apple-system,sans-serif;
     left: 40px;
     bottom: 40px;
-    z-index: 10;
+    z-index: 100;
     letter-spacing: .1em;
     -webkit-animation: scroll 2s infinite;
     animation: scroll 2s infinite;

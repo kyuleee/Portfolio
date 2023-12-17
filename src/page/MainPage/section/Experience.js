@@ -4,7 +4,7 @@ import { Avatar } from "./Avator";
 export const Experience = () => {
     return (
         <>
-            <OrbitControls />
+            {/* <OrbitControls /> */}
             <group position-y={-1}>
                 <ContactShadows
                     opacity={0.42}
@@ -16,7 +16,7 @@ export const Experience = () => {
                 />
                 <Avatar />
             </group>
-            <ambientLight intensity={3} />
+            <ambientLight intensity={4} />
         </>
 
     );

@@ -29,6 +29,12 @@
     /* fill: #27c4d5; */
     color: #fff;
   }
+  .bottomCpy{
+    z-index: 101;
+    position: absolute;
+    bottom: 40px;
+    color: #c2c2c2;
+  }
   
   @keyframes stroke {
     0%   {
@@ -41,8 +47,8 @@
     }
     70%  {
       fill: rgba(72,138,204,0);
-      stroke: rgba(54,95,160,1);
-      /* stroke: #27C4D5; */
+      /* stroke: rgba(54,95,160,1); */
+      stroke: #27C4D5;
 
     }
     80%  {

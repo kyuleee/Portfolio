@@ -5,7 +5,6 @@ import gsap from 'gsap';
 const MyComponent = () => {
   useEffect(() => {
     const animationOptions = {
-      // Define your animation options here
     };
 
     const introAnimation = () => {
