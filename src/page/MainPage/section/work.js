@@ -26,12 +26,12 @@ const Work = forwardRef(function Work(props,ref){
                             <div className='usecase'>
                                 <div className='front'>
                                     <img src={item.img} />
-                                    <p>{item.title}</p>
                                 </div>
                                 <div className='back'>
                                     <h3>{item.title}</h3>
                                     <p dangerouslySetInnerHTML={{ __html: item.desc }} />
                                 </div>
+                                <p className='ddd'>{item.title}</p>
                             </div>
                         </li>
                     ))}

@@ -74,7 +74,7 @@
     margin-right: 35px;
 }
 
-/* .fstline>div:first-child{
+.fstline>div:first-child{
     background: url('../../../img/html.png') no-repeat top center;
     background-size: contain;
 }
@@ -92,7 +92,7 @@
 }
 
 .secline>div:first-child{
-    background: url('../../../img/figma.png') no-repeat top center;
+    background: url('../../../img/figma2.png') no-repeat top center;
     background-size: contain;
 }
 .secline>div:nth-child(2){
@@ -117,7 +117,14 @@
     background: url('../../../img/node.png') no-repeat top center;
     background-size: contain;
 }
-.trdline>div:last-child{
+.trdline>div:nth-child(3){
     background: url('../../../img/vscode.png') no-repeat top center;
     background-size: contain;
-} */
+}
+.trdline>div:last-child{
+    background: url('../../../img/jsx.png') no-repeat top center;
+    background-size: contain;
+}
+.certificate{
+    margin-top: 50px;
+}

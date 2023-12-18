@@ -18,7 +18,7 @@ const MainIntro = () => {
                         <color attach="background" args={["#000016"]} />
                         <Experience />
                     </Canvas>
-                    <p className='bottomCpy'>안녕</p>
+                    <p className='bottomCpy'>웹의 세계에서 색다른 사용자 경험을 디자인하고, <br/>코드로 현실로 만들어내는 프론트엔드 개발자입니다.</p>
                 </article>
             </section>
         </div>

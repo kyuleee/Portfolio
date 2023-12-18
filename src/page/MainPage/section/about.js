@@ -77,9 +77,9 @@ const About = forwardRef(function About(props, ref) {
                                     <div></div>
                                     <div></div>
                                     <div></div>
+                                    <div></div>
                                 </div>
                             </div>
-
                         </div>
                         <div className='certificate'>
                             <h3>CERTIFICATE</h3>

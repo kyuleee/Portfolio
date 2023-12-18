@@ -11,42 +11,34 @@
     font-size: 160px;
     color: #27C4D5;
 }
-button{
-    background: none;
-    color: #fff;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
 .contactTxt{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 .contactTxt>div{
     display: flex;
     margin-bottom: 20px;
-    width: 100%;
     font-size: 28px;
 }
-
 .contactTxt>div span, a{
     font-size: 28px;
     cursor: pointer;
     transition: all 0.3s;
+    color: #a0a0a0;
 }
 .contactTxt>div span:hover{
-    color: #FD9F2A;
+    color: #fff;
 }
 .contactTxt>div>p{
     margin-right: 60px;
 }
 .contactTxt>div a:hover{
-    color: #FD9F2A;
+    color: #fff;
 }
 .copyright{
     text-align: center;
@@ -55,4 +47,15 @@ button{
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
+}
+table{
+    font-size: 28px;
+}
+td{
+    padding: 10px;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+td>a{
+    text-align: center;
 }
