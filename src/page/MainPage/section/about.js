@@ -1,5 +1,4 @@
 import './about.css';
-import me from '../../../img/meImg.jpg';
 import { forwardRef } from 'react';
 
 const About = forwardRef(function About(props, ref) {
@@ -7,7 +6,7 @@ const About = forwardRef(function About(props, ref) {
         <section className="about" ref={reviewRef => (ref.current[0] = reviewRef)}>
             <article className='contWrap'>
                 <div className='profile'>
-                    <img src={me} alt='민규리 이미지' />
+                    <img src='/Portfolio/img/mindy.jpg'/>
                     <h3>MIN KYU LEE</h3>
                     <p>
                         안녕하세요 프론트엔드 개발자입니다. 
@@ -15,7 +14,6 @@ const About = forwardRef(function About(props, ref) {
                         누구라도 한눈에 매력적으로 느낄 수 있는
                         웹 사이트를 구축하고 싶습니다.
                     </p>
-
                 </div>
                 <div className='profileTxt'>
                     <div className='left'>

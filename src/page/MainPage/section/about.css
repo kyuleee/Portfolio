@@ -19,6 +19,11 @@
     width: 30%;
     text-align: center;
 }
+.profile>img{
+    width: 90%;
+    height: auto;
+    vertical-align: top;
+}
 
 .profile>h3{
     color: #27c4d5;
